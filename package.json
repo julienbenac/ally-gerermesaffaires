@@ -7,7 +7,6 @@
   },
   "type": "module",
   "files": [
-    "src",
     "build/src",
     "build/stubs",
     "build/index.js",
@@ -36,9 +35,13 @@
     "prepublishOnly": "npm run build",
     "release": "npx release-it"
   },
+  "homepage": "https://github.com/julienbenac/ally-gerermesaffaires#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/julienbenac/ally-gerermesaffaires.git"
+  },
   "devDependencies": {
     "@adonisjs/assembler": "^7.8.2",
-    "@adonisjs/core": "^6.14.1",
     "@adonisjs/eslint-config": "^1.3.0",
     "@adonisjs/prettier-config": "^1.4.0",
     "@adonisjs/tsconfig": "^1.4.0",
@@ -55,7 +58,7 @@
   },
   "peerDependencies": {
     "@adonisjs/ally": "^5.0.2",
-    "@adonisjs/core": "^6.2.1"
+    "@adonisjs/core": "^6.14.1"
   },
   "author": "Julien Benac <contact@julienbenac.fr>",
   "license": "MIT",
