@@ -10,9 +10,9 @@
 
 `@julienbenac/ally-gerermesaffaires` is a [GererMesAffaires](https://www.gerermesaffaires.com) driver for [AdonisJS Ally](https://docs.adonisjs.com/guides/authentication/social-authentication).
 
-## Getting Started
+## Getting started
 
-First of all, if you haven't already done so, you need to install and configure the `@adonisjs/ally` package to implement social authentication in your AdonisJS application.
+First of all, if you haven't already done so, you need to install and configure the [`@adonisjs/ally`](https://www.npmjs.com/package/@adonisjs/ally) package to implement social authentication in your AdonisJS application.
 
 ```bash
 node ace add @adonisjs/ally
