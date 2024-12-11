@@ -81,14 +81,48 @@ export class GererMesAffairesDriver extends Oauth2Driver<
   }
 
   /**
+   * Persists the state inside the cookie
+   */
+  #persistState(): string | undefined {
+    if (this.isStateless) return
+
+    const state = this.getState()
+    this.ctx.response.encryptedCookie(this.stateCookieName, state, {
+      sameSite: false,
+      httpOnly: true,
+    })
+
+    return state
+  }
+
+  /**
    * Configuring the redirect request with defaults
    */
   protected configureRedirectRequest(request: RedirectRequestContract<GererMesAffairesScopes>) {
     // Define user defined scopes or the default one's
     request.scopes(this.config.scopes || ['openid', 'collaborator'])
 
+    // Set "state" param except if stateless authentication
+    const state = this.#persistState()
+    state && request.param(this.stateParamName, state)
+
     // Set "response_type" param
     request.param('response_type', 'code')
+  }
+
+  /**
+   * Redirects user for authentication
+   */
+  async redirect(
+    callback?: (request: RedirectRequestContract<GererMesAffairesScopes>) => void
+  ): Promise<void> {
+    const url = await this.redirectUrl((request) => {
+      if (typeof callback === 'function') {
+        callback(request)
+      }
+    })
+
+    this.ctx.response.redirect(url)
   }
 
   /**
