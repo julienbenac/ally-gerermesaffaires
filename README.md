@@ -62,6 +62,7 @@ router.get('/gerermesaffaires', ({ response }) => {
 
 router.get('/gerermesaffaires/redirect', ({ ally }) => {
   return ally.use('gerermesaffaires').redirect((request) => {
+    request.clearScopes() // Clear default scopes
     request.scopes(['openid', 'collaborator', 'profile', 'address', 'email', 'phone'])
   })
 })
