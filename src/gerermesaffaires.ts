@@ -181,10 +181,10 @@ export class GererMesAffairesDriver extends Oauth2Driver<
   async user(
     callback?: (request: ApiRequestContract) => void
   ): Promise<AllyUserContract<GererMesAffairesToken>> {
-    const token = await this.accessToken(callback)
+    const { id_token: idToken, ...token } = await this.accessToken(callback)
     const user = await this.getUserInfo(token.token, callback)
 
-    return { ...user, token }
+    return { ...user, token: { ...token, idToken } }
   }
 
   /**

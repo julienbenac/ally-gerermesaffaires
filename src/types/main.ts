@@ -36,7 +36,13 @@ export type GererMesAffairesToken = {
 
   /** The timestamp at which the token expires */
   expiresAt: Date
-}
+
+  /** The access scope defining the user's permission level */
+  scope: 'collaborator' | 'owner'
+
+  /** The identification token (JWT format) for session lifecycle */
+  idToken: string
+} & Record<string, any>
 
 export type GererMesAffairesScopes =
   | 'openid'
