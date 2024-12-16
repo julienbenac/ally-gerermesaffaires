@@ -18,10 +18,6 @@
     ".": {
       "import": "./build/index.js",
       "types": "./build/index.d.ts"
-    },
-    "./types": {
-      "import": "./build/types/main.js",
-      "types": "./build/types/main.d.ts"
     }
   },
   "scripts": {
