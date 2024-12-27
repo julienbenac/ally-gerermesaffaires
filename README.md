@@ -12,6 +12,8 @@
 
 ## Getting started
 
+### Installation
+
 First of all, if you haven't already done so, you need to install and configure the [`@adonisjs/ally`](https://www.npmjs.com/package/@adonisjs/ally) package to implement social authentication in your AdonisJS application.
 
 ```bash
@@ -23,6 +25,8 @@ After going through the first step, you can now download the `@julienbenac/ally-
 ```bash
 npm install @julienbenac/ally-gerermesaffaires
 ```
+
+### Usage
 
 Next, configure the package by running the following command. This command will update the `.env` and `start/env.ts` files with the environment variables.
 
