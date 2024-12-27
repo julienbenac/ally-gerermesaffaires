@@ -5,13 +5,15 @@
  * @license MIT
  */
 
-import type { HttpContext } from '@adonisjs/core/http'
 import type {
   AllyUserContract,
   ApiRequestContract,
   RedirectRequestContract,
 } from '@adonisjs/ally/types'
+import type { HttpContext } from '@adonisjs/core/http'
+
 import { Oauth2Driver } from '@adonisjs/ally'
+
 import {
   GererMesAffairesDriverConfig,
   GererMesAffairesScopes,
@@ -19,7 +21,7 @@ import {
 } from './types/main.js'
 
 /**
- * GererMesAffaires driver to login user via GererMesAffaires
+ * GererMesAffaires driver to login user via GererMesAffaires.
  */
 export class GererMesAffairesDriver extends Oauth2Driver<
   GererMesAffairesToken,
@@ -31,13 +33,13 @@ export class GererMesAffairesDriver extends Oauth2Driver<
    */
   protected authorizeUrl: string
 
-  /** The URL to hit to get an access token */
+  /** The URL to hit to get an access token. */
   protected accessTokenUrl: string
 
-  /** The URL to hit to get user details */
+  /** The URL to hit to get user details. */
   protected userInfoUrl: string
 
-  /** The cookie name for storing the CSRF token */
+  /** The cookie name for storing the CSRF token. */
   protected stateCookieName = 'gerermesaffaires_oauth_state'
 
   /**
@@ -46,16 +48,16 @@ export class GererMesAffairesDriver extends Oauth2Driver<
    */
   protected stateParamName = 'state'
 
-  /** The parameter name from which to fetch the authorization code */
+  /** The parameter name from which to fetch the authorization code. */
   protected codeParamName = 'code'
 
-  /** The parameter name from which to fetch the error message post redirect */
+  /** The parameter name from which to fetch the error message post redirect. */
   protected errorParamName = 'error'
 
-  /** The parameter name for defining the authorization scopes */
+  /** The parameter name for defining the authorization scopes. */
   protected scopeParamName = 'scope'
 
-  /** The identifier for joining multiple scopes */
+  /** The identifier for joining multiple scopes. */
   protected scopesSeparator = ' '
 
   constructor(
@@ -81,7 +83,7 @@ export class GererMesAffairesDriver extends Oauth2Driver<
   }
 
   /**
-   * Persists the state inside the cookie
+   * Persists the state inside the cookie.
    */
   #persistState(): string | undefined {
     if (this.isStateless) return
@@ -96,7 +98,7 @@ export class GererMesAffairesDriver extends Oauth2Driver<
   }
 
   /**
-   * Configuring the redirect request with defaults
+   * Configuring the redirect request with defaults.
    */
   protected configureRedirectRequest(request: RedirectRequestContract<GererMesAffairesScopes>) {
     // Define user defined scopes or the default one's
@@ -111,7 +113,7 @@ export class GererMesAffairesDriver extends Oauth2Driver<
   }
 
   /**
-   * Redirects user for authentication
+   * Redirects user for authentication.
    */
   async redirect(
     callback?: (request: RedirectRequestContract<GererMesAffairesScopes>) => void
@@ -126,7 +128,7 @@ export class GererMesAffairesDriver extends Oauth2Driver<
   }
 
   /**
-   * Returns the HTTP request with the authorization header set
+   * Returns the HTTP request with the authorization header set.
    */
   protected getAuthenticatedRequest(url: string, token: string) {
     const request = this.httpClient(url)
@@ -139,7 +141,7 @@ export class GererMesAffairesDriver extends Oauth2Driver<
   }
 
   /**
-   * Fetches the user details
+   * Fetches the user details.
    */
   protected async getUserInfo(
     token: string,
@@ -165,7 +167,7 @@ export class GererMesAffairesDriver extends Oauth2Driver<
   }
 
   /**
-   * Find if the current error message is access denied
+   * Find if the current error message is access denied.
    */
   accessDenied(): boolean {
     const error = this.getError()
@@ -176,7 +178,7 @@ export class GererMesAffairesDriver extends Oauth2Driver<
   }
 
   /**
-   * Returns details of the authorized user
+   * Returns details of the authorized user.
    */
   async user(
     callback?: (request: ApiRequestContract) => void
@@ -188,7 +190,7 @@ export class GererMesAffairesDriver extends Oauth2Driver<
   }
 
   /**
-   * Finds the user from access token
+   * Finds the user from access token.
    */
   async userFromToken(
     token: string,

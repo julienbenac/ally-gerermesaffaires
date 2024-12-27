@@ -22,25 +22,25 @@ export interface GererMesAffairesDriverConfig extends Oauth2DriverConfig {
 }
 
 export type GererMesAffairesToken = {
-  /** The token value */
+  /** The token value. */
   token: string
 
-  /** The token type */
+  /** The token type. */
   type: 'bearer'
 
-  /** The refresh token */
+  /** The refresh token. */
   refreshToken: string
 
-  /** The static time in seconds when the token will expire */
+  /** The static time in seconds when the token will expire. */
   expiresIn: number
 
-  /** The timestamp at which the token expires */
+  /** The timestamp at which the token expires. */
   expiresAt: Date
 
-  /** The access scope defining the user's permission level */
+  /** The access scope defining the user's permission level. */
   scope: 'collaborator' | 'owner'
 
-  /** The identification token (JWT format) for session lifecycle */
+  /** The identification token (JWT format) for session lifecycle. */
   idToken: string
 } & Record<string, any>
 

@@ -25,6 +25,7 @@
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
+    "typecheck": "tsc --noEmit",
     "compile": "npm run clean && tsc",
     "prebuild": "npm run format && npm run lint:fix",
     "build": "npm run compile",
