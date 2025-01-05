@@ -42,8 +42,8 @@
     "@adonisjs/eslint-config": "^2.0.0-beta.7",
     "@adonisjs/prettier-config": "^1.4.0",
     "@adonisjs/tsconfig": "^1.4.0",
-    "@swc/core": "^1.10.2",
-    "@types/node": "^22.10.2",
+    "@swc/core": "^1.10.4",
+    "@types/node": "^22.10.5",
     "del-cli": "^6.0.0",
     "eslint": "^9.17.0",
     "prettier": "^3.4.2",
@@ -51,7 +51,7 @@
     "typescript": "^5.7.2"
   },
   "dependencies": {
-    "@poppinss/utils": "^6.8.3"
+    "@poppinss/utils": "^6.9.2"
   },
   "peerDependencies": {
     "@adonisjs/ally": "^5.0.2",
