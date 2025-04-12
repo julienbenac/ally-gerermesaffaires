@@ -7,28 +7,21 @@
   },
   "type": "module",
   "files": [
-    "build/src",
-    "build/stubs",
-    "build/index.js",
-    "build/index.d.ts",
-    "build/configure.js",
-    "build/configure.d.ts"
+    "build"
   ],
   "exports": {
     ".": {
-      "import": "./build/index.js",
-      "types": "./build/index.d.ts"
+      "types": "./build/index.d.ts",
+      "import": "./build/index.js"
     }
   },
   "scripts": {
-    "clean": "del-cli build",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "format": "prettier --write .",
     "typecheck": "tsc --noEmit",
-    "compile": "npm run clean && tsc",
     "prebuild": "npm run format && npm run lint:fix",
-    "build": "npm run compile",
+    "build": "tsup",
     "prepublishOnly": "npm run build",
     "release": "npx release-it"
   },
@@ -44,10 +37,10 @@
     "@adonisjs/tsconfig": "^1.4.0",
     "@swc/core": "^1.11.7",
     "@types/node": "^22.13.9",
-    "del-cli": "^6.0.0",
     "eslint": "^9.21.0",
     "prettier": "^3.5.3",
     "release-it": "^18.1.2",
+    "tsup": "^8.4.0",
     "typescript": "^5.8.2"
   },
   "dependencies": {
