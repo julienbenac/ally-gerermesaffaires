@@ -33,15 +33,15 @@
   "devDependencies": {
     "@adonisjs/assembler": "^7.8.2",
     "@adonisjs/eslint-config": "^2.0.0",
-    "@adonisjs/prettier-config": "^1.4.0",
+    "@adonisjs/prettier-config": "^1.4.4",
     "@adonisjs/tsconfig": "^1.4.0",
-    "@swc/core": "^1.11.7",
-    "@types/node": "^22.13.9",
-    "eslint": "^9.21.0",
+    "@swc/core": "^1.11.20",
+    "@types/node": "^22.14.1",
+    "eslint": "^9.24.0",
     "prettier": "^3.5.3",
     "release-it": "^18.1.2",
     "tsup": "^8.4.0",
-    "typescript": "^5.8.2"
+    "typescript": "^5.8.3"
   },
   "dependencies": {
     "@poppinss/utils": "^6.9.2"
