@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://github.com/julienbenac/ally-gerermesaffaires/assets/49412922/5a504a07-c1a0-444a-ab1f-183d00b20754" />
+  <img src="https://github.com/user-attachments/assets/74aa6d90-cc19-4c32-adb6-d621dd3e5270" />
 </div>
 
 <div align="center">
