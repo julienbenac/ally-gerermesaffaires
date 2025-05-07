@@ -38,21 +38,21 @@
     "@adonisjs/prettier-config": "^1.4.4",
     "@adonisjs/tsconfig": "^1.4.0",
     "@swc/core": "^1.11.24",
-    "@types/node": "^22.15.3",
-    "eslint": "^9.25.1",
+    "@types/node": "^22.15.14",
+    "eslint": "^9.26.0",
     "husky": "^9.1.7",
     "prettier": "^3.5.3",
-    "release-it": "^19.0.1",
+    "release-it": "^19.0.2",
     "taze": "^19.1.0",
     "tsup": "^8.4.0",
     "typescript": "^5.8.3"
   },
   "dependencies": {
-    "@poppinss/utils": "^6.9.2"
+    "@poppinss/utils": "^6.9.3"
   },
   "peerDependencies": {
-    "@adonisjs/ally": "^5.0.2",
-    "@adonisjs/core": "^6.14.1"
+    "@adonisjs/ally": "^5.1.0",
+    "@adonisjs/core": "^6.17.2"
   },
   "author": "Julien Benac <contact@julienbenac.fr>",
   "license": "MIT",
