@@ -91,3 +91,36 @@ router.get('/gerermesaffaires/callback', async ({ ally }) => {
   return await gerermesaffaires.user()
 })
 ```
+
+## Development
+
+This section provides instructions for setting up the development environment and contributing to the package. The project uses Git hooks managed by [Husky](https://typicode.github.io/husky) to automate parts of the development workflow, helping maintain code quality and consistency.
+
+### Install dependencies
+
+To set up the development environment, install the project dependencies as follows.
+
+```bash
+npm install
+```
+
+### Update dependencies with Taze
+
+Taze is a modern CLI tool that helps you keep your dependencies up to date by checking for newer versions and updating them according to your configuration. The project's `taze.config.js` file configures Taze with the following settings:
+
+- Enables interactive mode, allowing you to select which dependencies to update.
+- Automatically writes the updated versions to the `package.json`.
+- Automatically installs the updated dependencies after updating.
+- Checks and updates peer dependencies along with regular dependencies.
+
+```bash
+npm run taze
+```
+
+### Release package
+
+To publish a new version of the package, run the following command which automates the entire release process. The script handles incrementing the version number, building the production-ready code, publishing the package, and creating a Git tag for the release, ensuring a consistent and error-free workflow.
+
+```bash
+npm run release
+```
