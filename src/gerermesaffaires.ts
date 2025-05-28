@@ -102,7 +102,7 @@ export class GererMesAffairesDriver extends Oauth2Driver<
    */
   protected configureRedirectRequest(request: RedirectRequestContract<GererMesAffairesScopes>) {
     // Define user defined scopes or the default one's
-    request.scopes(this.config.scopes || ['openid', 'collaborator'])
+    request.scopes(this.config.scopes || ['openid', 'collaborator', 'profile', 'email'])
 
     // Set "state" param except if stateless authentication
     const state = this.#persistState()
