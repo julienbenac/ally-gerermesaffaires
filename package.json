@@ -34,25 +34,25 @@
   },
   "devDependencies": {
     "@adonisjs/assembler": "^7.8.2",
-    "@adonisjs/eslint-config": "^2.0.0",
-    "@adonisjs/prettier-config": "^1.4.4",
+    "@adonisjs/eslint-config": "^2.1.0",
+    "@adonisjs/prettier-config": "^1.4.5",
     "@adonisjs/tsconfig": "^1.4.0",
-    "@swc/core": "^1.11.24",
-    "@types/node": "^22.15.14",
-    "eslint": "^9.26.0",
+    "@swc/core": "^1.11.29",
+    "@types/node": "^22.15.23",
+    "eslint": "^9.27.0",
     "husky": "^9.1.7",
     "prettier": "^3.5.3",
     "release-it": "^19.0.2",
     "taze": "^19.1.0",
-    "tsup": "^8.4.0",
+    "tsup": "^8.5.0",
     "typescript": "^5.8.3"
   },
   "dependencies": {
-    "@poppinss/utils": "^6.9.3"
+    "@poppinss/utils": "^6.9.4"
   },
   "peerDependencies": {
     "@adonisjs/ally": "^5.1.0",
-    "@adonisjs/core": "^6.17.2"
+    "@adonisjs/core": "^6.18.0"
   },
   "author": "Julien Benac <contact@julienbenac.fr>",
   "license": "MIT",
