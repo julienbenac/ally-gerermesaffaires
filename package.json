@@ -1,7 +1,7 @@
 {
   "name": "@julienbenac/ally-gerermesaffaires",
   "description": "GererMesAffaires driver for AdonisJS Ally",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "engines": {
     "node": ">=20.17.0"
   },
