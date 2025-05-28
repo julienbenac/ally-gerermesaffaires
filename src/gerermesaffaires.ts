@@ -158,7 +158,7 @@ export class GererMesAffairesDriver extends Oauth2Driver<
     return {
       id: body.sub,
       nickName: body.given_name,
-      name: body.given_name,
+      name: body.family_name,
       email: body.email,
       emailVerificationState: body.email_verified ? ('verified' as const) : ('unverified' as const),
       avatarUrl: body.picture,
