@@ -24,9 +24,41 @@ node ace add @adonisjs/ally
 
 After going through the first step, you can now download the `@julienbenac/ally-gerermesaffaires` package.
 
+<details open>
+  <summary><strong>📦 Using npm</strong></summary>
+
 ```bash
 npm install @julienbenac/ally-gerermesaffaires
 ```
+
+</details>
+
+<details>
+  <summary><strong>🚀 Using pnpm</strong></summary>
+
+```bash
+pnpm add @julienbenac/ally-gerermesaffaires
+```
+
+</details>
+
+<details>
+  <summary><strong>🧶 Using yarn</strong></summary>
+
+```bash
+yarn add @julienbenac/ally-gerermesaffaires
+```
+
+</details>
+
+<details>
+  <summary><strong>🥟 Using bun</strong></summary>
+
+```bash
+bun add @julienbenac/ally-gerermesaffaires
+```
+
+</details>
 
 ### Usage
 
@@ -101,9 +133,41 @@ This section provides instructions for setting up the development environment an
 
 To set up the development environment, install the project dependencies as follows.
 
+<details open>
+  <summary><strong>📦 Using npm</strong></summary>
+
 ```bash
 npm install
 ```
+
+</details>
+
+<details>
+  <summary><strong>🚀 Using pnpm</strong></summary>
+
+```bash
+pnpm install
+```
+
+</details>
+
+<details>
+  <summary><strong>🧶 Using yarn</strong></summary>
+
+```bash
+yarn install
+```
+
+</details>
+
+<details>
+  <summary><strong>🥟 Using bun</strong></summary>
+
+```bash
+bun install
+```
+
+</details>
 
 ### Update dependencies with Taze
 
@@ -114,14 +178,78 @@ Taze is a modern CLI tool that helps you keep your dependencies up to date by ch
 - Automatically installs the updated dependencies after updating.
 - Checks and updates peer dependencies along with regular dependencies.
 
+<details open>
+  <summary><strong>📦 Using npm</strong></summary>
+
 ```bash
 npm run taze
 ```
+
+</details>
+
+<details>
+  <summary><strong>🚀 Using pnpm</strong></summary>
+
+```bash
+pnpm run taze
+```
+
+</details>
+
+<details>
+  <summary><strong>🧶 Using yarn</strong></summary>
+
+```bash
+yarn run taze
+```
+
+</details>
+
+<details>
+  <summary><strong>🥟 Using bun</strong></summary>
+
+```bash
+bun run taze
+```
+
+</details>
 
 ### Release package
 
 To publish a new version of the package, run the following command which automates the entire release process. The script handles incrementing the version number, building the production-ready code, publishing the package, and creating a Git tag for the release, ensuring a consistent and error-free workflow.
 
+<details open>
+  <summary><strong>📦 Using npm</strong></summary>
+
 ```bash
 npm run release
 ```
+
+</details>
+
+<details>
+  <summary><strong>🚀 Using pnpm</strong></summary>
+
+```bash
+pnpm run release
+```
+
+</details>
+
+<details>
+  <summary><strong>🧶 Using yarn</strong></summary>
+
+```bash
+yarn run release
+```
+
+</details>
+
+<details>
+  <summary><strong>🥟 Using bun</strong></summary>
+
+```bash
+bun run release
+```
+
+</details>
